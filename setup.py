@@ -8,7 +8,7 @@ install_requires = [
 
 setup(
     name="jf",
-    description="Simple Json inline Formatter",
+    description="Simple in-place JSON Formatter",
     author="rohan winsor",
     author_email="rohan.w.charles@gmail.com",
     url="https://github.com/rohanwinsor/jf",

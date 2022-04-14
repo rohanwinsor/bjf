@@ -1,5 +1,7 @@
 # jf
 
+Simple in-place JSON Formatter
+
 ## Install
 
 ```bash
