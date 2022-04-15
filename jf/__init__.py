@@ -3,6 +3,7 @@ import json
 import click
 import warnings
 
+
 @click.command()
 @click.argument(
     "path",
