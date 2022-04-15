@@ -20,12 +20,15 @@ def main(path):
                 raise Exception("Please pass valid JSON files")
             format(fname)
         elif fname == ".":
+            formatted = [format(i) for i in get_nested_files(os.getcwd())]
+            count_true = formatted.count(True)
             print(
-                f"{[format(i) for i in get_nested_files(os.getcwd())].count(True)} JSON file formatted"
+                f"{'No' if count_true == 0 else count_true} JSON {'file' if count_true == 0 else 'files'} formatted"
             )
         elif os.path.isdir(fname):
+            formatted = [format(i) for i in get_nested_files(fname)]
             print(
-                f"{[format(i) for i in get_nested_files(fname)].count(True)} JSON file formatted"
+                f"{'No' if count_true == 0 else count_true} JSON {'file' if count_true <=1 else 'files'} formatted"
             )
 
 
@@ -35,7 +38,7 @@ def format(fname):
             json_data = json.load(f)
         with open(fname, "w") as f:
             json.dump(json_data, f, indent=4, sort_keys=True)
-        print(f"Formatted {fname}")
+        print(f"Formatted :: {fname}")
         return True
     except:
         warning = f"Unable to format file {fname}"
