@@ -1,4 +1,4 @@
-# jf
+# bjf
 
 Simple in-place JSON Formatter
 
@@ -10,5 +10,5 @@ pip3 install "git+https://github.com/rohanwinsor/bjf.git"
 
 ## Usage
 ```
-python -m jf {source_file_or_directory}
+python -m bjf {source_file_or_directory}
 ```
