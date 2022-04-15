@@ -16,14 +16,14 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 VERSION = "0.0.1"
 
 setup(
-    name="jf",
+    name="bjf",
     version=VERSION,
     description="Simple in-place JSON Formatter",
     author="rohan winsor",
     long_description_content_type="text/markdown",
     long_description=long_description,
     author_email="rohan.w.charles@gmail.com",
-    url="https://github.com/rohanwinsor/jf",
+    url="https://github.com/rohanwinsor/bjf",
     install_requires=install_requires,
     packages=find_packages(),
     license="MIT",

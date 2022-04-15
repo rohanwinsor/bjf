@@ -5,7 +5,7 @@ Simple in-place JSON Formatter
 ## Install
 
 ```bash
-pip3 install "git+https://github.com/rohanwinsor/jf.git"
+pip3 install "git+https://github.com/rohanwinsor/bjf.git"
 ```
 
 ## Usage
