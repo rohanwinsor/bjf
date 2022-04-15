@@ -1,2 +1,5 @@
 tmp.py
 json/*.json
+bjf.egg-info/
+build/
+dist/
