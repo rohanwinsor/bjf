@@ -26,7 +26,8 @@ def main(path):
                 f"{'No' if count_true == 0 else count_true} JSON {'file' if count_true == 0 else 'files'} formatted"
             )
         elif os.path.isdir(fname):
-            formatted = [format(i) for i in get_nested_files(fname)]
+            formatted = [format(i) for i in get_nested_files(os.getcwd())]
+            count_true = formatted.count(True)
             print(
                 f"{'No' if count_true == 0 else count_true} JSON {'file' if count_true <=1 else 'files'} formatted"
             )
